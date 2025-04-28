@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col justify-center items-center text-center gap-8 px-6 bg-gradient-to-br from-gray-800 via-black to-gray-900 text-white snap-start"
+      className="snap-start min-h-screen flex flex-col justify-center items-center text-center gap-8 px-6 pt-20 bg-gradient-to-br from-gray-800 via-black to-gray-900 text-white overflow-y-auto"
     >
       {/* Título */}
       <h2 className="text-4xl sm:text-5xl font-bold text-blue-400">
