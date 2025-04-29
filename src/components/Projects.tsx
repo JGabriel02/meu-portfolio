@@ -121,7 +121,7 @@ export default function ProjectsSection() {
                 alt={project.title}
                 width={400}
                 height={200}
-                className="object-contain"
+                className="object-cover w-full h-full"
               />
             )}
 
