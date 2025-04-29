@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 
@@ -24,16 +24,18 @@ export default function Header() {
           <a href="#skills" className="hover:text-blue-500 transition">Skills</a>
           <a href="#projects" className="hover:text-blue-500 transition">Projetos</a>
           <a href="#youtube" className="hover:text-blue-500 transition">YouTube</a>
-          <a href="#contact" className="hover:text-blue-500 transition">Contato</a>
         </nav>
 
-        {/* Ícones Github e Linkedin */}
+        {/* Ícones Github, Linkedin e WhatsApp */}
         <div className="hidden md:flex items-center gap-4">
           <a href="https://github.com/JGabriel02" target="_blank" rel="noopener noreferrer">
             <FaGithub size={24} className="text-gray-700 hover:text-blue-500 transition" />
           </a>
           <a href="https://www.linkedin.com/in/slpjg/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={24} className="text-gray-700 hover:text-blue-500 transition" />
+          </a>
+          <a href="https://wa.me/SEU_NUMERO" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp size={24} className="text-green-500 hover:text-green-600 transition" />
           </a>
         </div>
 
@@ -53,15 +55,17 @@ export default function Header() {
           <a href="#skills" className="hover:text-blue-500 transition" onClick={() => setIsMenuOpen(false)}>Skills</a>
           <a href="#projects" className="hover:text-blue-500 transition" onClick={() => setIsMenuOpen(false)}>Projetos</a>
           <a href="#youtube" className="hover:text-blue-500 transition" onClick={() => setIsMenuOpen(false)}>YouTube</a>
-          <a href="#contact" className="hover:text-blue-500 transition" onClick={() => setIsMenuOpen(false)}>Contato</a>
 
-          {/* Ícones Github e Linkedin */}
+          {/* Ícones Github, Linkedin e WhatsApp */}
           <div className="flex items-center gap-4">
             <a href="https://github.com/JGabriel02" target="_blank" rel="noopener noreferrer">
               <FaGithub size={24} className="text-gray-700 hover:text-blue-500 transition" />
             </a>
             <a href="https://www.linkedin.com/in/slpjg/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={24} className="text-gray-700 hover:text-blue-500 transition" />
+            </a>
+            <a href="https://wa.me/5551994715897" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp size={24} className="text-green-500 hover:text-green-600 transition" />
             </a>
           </div>
         </div>

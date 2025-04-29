@@ -25,3 +25,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+  height: 8px; /* Altura da barra de rolagem horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Cor do fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a; /* Cor do "polegar" da barra de rolagem */
+  border-radius: 4px; /* Arredondamento do polegar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6a6a6a; /* Cor do polegar ao passar o mouse */
+}

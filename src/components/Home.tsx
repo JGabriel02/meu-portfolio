@@ -38,21 +38,10 @@ export default function HomeSection() {
         >
           Meu currículo
         </a>
-        <a
-          href="https://linktr.ee/SLPJG"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gradient-to-r from-pink-500 to-red-400 text-white px-6 py-3 rounded-full font-semibold hover:opacity-80 hover:shadow-lg hover:scale-105 transition-transform"
-        >
-          Saiba mais
-        </a>
       </div>
 
-      {/* Indicador de Scroll */}
-      <div className="absolute bottom-4 animate-bounce">
-        <span className="text-gray-400">Scroll Down</span>
-        <div className="w-4 h-4 border-b-2 border-r-2 border-gray-400 rotate-45 mt-2"></div>
-      </div>
+     
+     
     </section>
   );
 }
