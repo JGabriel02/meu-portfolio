@@ -34,7 +34,7 @@ export default function Header() {
           <a href="https://www.linkedin.com/in/slpjg/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={24} className="text-gray-700 hover:text-blue-500 transition" />
           </a>
-          <a href="https://wa.me/SEU_NUMERO" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/5551994715897" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp size={24} className="text-green-500 hover:text-green-600 transition" />
           </a>
         </div>
