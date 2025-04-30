@@ -42,3 +42,18 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #6a6a6a; /* Cor do polegar ao passar o mouse */
 }
+
+@keyframes pulse-custom {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse-custom {
+  animation: pulse-custom 1.5s infinite;
+}

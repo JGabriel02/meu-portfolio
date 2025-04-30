@@ -4,7 +4,7 @@ import AboutSection from "@/components/About";
 import SkillsSection from "@/components/Skills";
 import ProjectsSection from "@/components/Projects";
 import YouTubeSection from "@/components/YouTubeSection";
-
+import Footer from "@/components/Footer"; // Importando o Footer
 
 export default function Page() {
   return (
@@ -25,8 +25,12 @@ export default function Page() {
         </section>
         <section className="snap-start">
           <YouTubeSection />
+          <Footer /> 
         </section>
+       
       </main>
+      
+      
     </>
   );
 }

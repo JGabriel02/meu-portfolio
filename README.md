@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Meu Portfólio
 
-## Getting Started
+Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar minhas habilidades, projetos e informações de contato de forma interativa e visualmente atraente.
 
-First, run the development server:
+## 🖥️ Tecnologias Utilizadas
 
-```bash
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Next.js**: Framework React para renderização do lado do servidor e geração de sites estáticos.
+- **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
+- **Framer Motion**: Biblioteca para animações suaves e interativas.
+- **Swiper.js**: Biblioteca para criação de carrosséis e sliders.
+- **React Icons**: Conjunto de ícones para enriquecer a interface.
+
+## 📂 Estrutura do Projeto
+
+```plaintext
+src/
+├── app/
+│   ├── page.tsx          # Página principal do portfólio
+├── components/
+│   ├── Header.tsx        # Cabeçalho com navegação
+│   ├── Home.tsx          # Seção inicial (Home)
+│   ├── About.tsx         # Seção "Sobre Mim"
+│   ├── Skills.tsx        # Seção de habilidades
+│   ├── Projects.tsx      # Seção de projetos
+│   ├── YouTubeSection.tsx# Seção de vídeos do YouTube
+│   ├── Footer.tsx        # Rodapé com informações de contato
+├── styles/               # Estilos globais
+
+🚀 Funcionalidades
+Navegação Suave: Comportamento de rolagem suave entre as seções.
+Animações: Transições suaves utilizando o Framer Motion.
+Responsividade: Layout adaptado para dispositivos móveis e desktops.
+Carrossel de Projetos: Apresentação interativa dos projetos com Swiper.js.
+Seção de Contato: Links para redes sociais e informações de contato.
+
+📸 Demonstração
+Adicione aqui capturas de tela ou um link para uma demonstração ao vivo do projeto.
+
+🛠️ Como Executar o Projeto
+Clone o repositório:
+
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+Acesse o diretório do projeto:
+
+cd meu-portfolio
+
+Instale as dependências:
+
+npm install
+
+Inicie o servidor de desenvolvimento:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra o navegador e acesse:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+📞 Contato
+E-mail: joaogabrielrocha.dev@gmail.com
+GitHub: JGabriel02
+LinkedIn: João Gabriel
+WhatsApp: +55 (51) 99471-5897
+📝 Licença
+Este projeto é de uso pessoal e não possui uma licença específica. Sinta-se à vontade para se inspirar, mas não copie diretamente sem autorização.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🌟 Agradecimentos
+Obrigado por visitar meu portfólio! Se tiver alguma dúvida ou sugestão, entre em contato. 😊
