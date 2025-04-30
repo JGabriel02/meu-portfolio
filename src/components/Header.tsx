@@ -15,7 +15,7 @@ export default function Header() {
         
         {/* Logo - Redireciona para Home */}
         <Link href="#home" className="flex items-center">
-          <Image src="/teste.png" alt="Logo" width={40} height={40} />
+          <Image src="/gengar.gif" alt="Logo" width={40} height={40} />
         </Link>
 
         {/* Navegação Desktop */}
