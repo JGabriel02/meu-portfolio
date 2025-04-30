@@ -34,8 +34,9 @@ Responsividade: Layout adaptado para dispositivos móveis e desktops.
 Carrossel de Projetos: Apresentação interativa dos projetos com Swiper.js.
 Seção de Contato: Links para redes sociais e informações de contato.
 
-📸 Demonstração
-Adicione aqui capturas de tela ou um link para uma demonstração ao vivo do projeto.
+## 📸 Demonstração
+
+![Demonstração do Portfólio](./demo.gif)
 
 🛠️ Como Executar o Projeto
 Clone o repositório:
@@ -60,6 +61,7 @@ http://localhost:3000
 
 
 📞 Contato
+
 E-mail: joaogabrielrocha.dev@gmail.com
 GitHub: JGabriel02
 LinkedIn: João Gabriel
