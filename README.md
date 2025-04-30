@@ -37,9 +37,7 @@ Carrossel de Projetos: Apresentação interativa dos projetos com Swiper.js.
 Seção de Contato: Links para redes sociais e informações de contato.
 
 📸 Demonstração
-<div align="center">
-  <img src="assets/demo/demo.gif" width="300" alt="Demonstração da pagina" />
-</div>
+![Demonstração do Portfólio](./demo.gif)
 
 🛠️ Como Executar o Projeto
 Clone o repositório:
