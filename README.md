@@ -27,6 +27,8 @@ src/
 │   ├── Footer.tsx        # Rodapé com informações de contato
 ├── styles/               # Estilos globais
 
+```
+
 🚀 Funcionalidades
 Navegação Suave: Comportamento de rolagem suave entre as seções.
 Animações: Transições suaves utilizando o Framer Motion.
@@ -35,29 +37,32 @@ Carrossel de Projetos: Apresentação interativa dos projetos com Swiper.js.
 Seção de Contato: Links para redes sociais e informações de contato.
 
 📸 Demonstração
-Adicione aqui capturas de tela ou um link para uma demonstração ao vivo do projeto.
+<div align="center">
+  <img src="assets/demo/demo.gif" width="300" alt="Demonstração da pagina" />
+</div>
 
 🛠️ Como Executar o Projeto
 Clone o repositório:
 
+```bash 
 git clone https://github.com/seu-usuario/seu-repositorio.git
-
+```
 Acesse o diretório do projeto:
-
+```bash 
 cd meu-portfolio
-
+```
 Instale as dependências:
-
+```bash 
 npm install
-
+```
 Inicie o servidor de desenvolvimento:
-
+```bash 
 npm run dev
-
+```
 Abra o navegador e acesse:
-
+```bash 
 http://localhost:3000
-
+```
 
 📞 Contato
 E-mail: joaogabrielrocha.dev@gmail.com
