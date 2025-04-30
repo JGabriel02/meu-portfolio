@@ -59,13 +59,13 @@ export default function Header() {
           {/* Ícones Github, Linkedin e WhatsApp */}
           <div className="flex items-center gap-4">
             <a href="https://github.com/JGabriel02" target="_blank" rel="noopener noreferrer">
-              <FaGithub size={24} className="text-gray-700 hover:text-blue-500 transition" />
+              <FaGithub size={24} className="text-white hover:text-blue-500 transition" />
             </a>
             <a href="https://www.linkedin.com/in/slpjg/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin size={24} className="text-gray-700 hover:text-blue-500 transition" />
+              <FaLinkedin size={24} className="text-white hover:text-blue-500 transition" />
             </a>
             <a href="https://wa.me/5551994715897" target="_blank" rel="noopener noreferrer">
-              <FaWhatsapp size={24} className="text-green-500 hover:text-green-600 transition" />
+              <FaWhatsapp size={24} className="text-white hover:text-green-600 transition" />
             </a>
           </div>
         </div>

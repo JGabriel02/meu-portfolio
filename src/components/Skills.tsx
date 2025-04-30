@@ -20,7 +20,7 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="min-h-screen flex flex-col justify-center items-center text-center gap-8 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white"
+      className="min-h-screen flex flex-col justify-center items-center text-center gap-8 px-6 pt-10 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white"
     >
       {/* Título */}
       <motion.h2
