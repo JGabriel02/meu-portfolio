@@ -30,11 +30,11 @@ src/
 ```
 
 🚀 Funcionalidades
-Navegação Suave: Comportamento de rolagem suave entre as seções.
-Animações: Transições suaves utilizando o Framer Motion.
-Responsividade: Layout adaptado para dispositivos móveis e desktops.
-Carrossel de Projetos: Apresentação interativa dos projetos com Swiper.js.
-Seção de Contato: Links para redes sociais e informações de contato.
+- Navegação Suave: Comportamento de rolagem suave entre as seções.
+- Animações: Transições suaves utilizando o Framer Motion.
+- Responsividade: Layout adaptado para dispositivos móveis e desktops.
+- Carrossel de Projetos: Apresentação interativa dos projetos com Swiper.js.
+- Seção de Contato: Links para redes sociais e informações de contato.
 
 📸 Demonstração
 ![Demonstração do Portfólio](./demo.gif)
@@ -62,11 +62,7 @@ Abra o navegador e acesse:
 http://localhost:3000
 ```
 
-📞 Contato
-E-mail: joaogabrielrocha.dev@gmail.com
-GitHub: JGabriel02
-LinkedIn: João Gabriel
-WhatsApp: +55 (51) 99471-5897
+
 📝 Licença
 Este projeto é de uso pessoal e não possui uma licença específica. Sinta-se à vontade para se inspirar, mas não copie diretamente sem autorização.
 
