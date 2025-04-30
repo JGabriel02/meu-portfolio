@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-[#0A0A0A] shadow-md z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between p-2">
         
         {/* Logo - Redireciona para Home */}
         <Link href="#home" className="flex items-center">
