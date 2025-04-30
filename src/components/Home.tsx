@@ -13,7 +13,7 @@ export default function HomeSection() {
       strings: ["Desenvolvedor Frontend Web e Mobile"],
       typeSpeed: 50,
       backSpeed: 30,
-      loop: true,
+      
     });
 
     return () => {
