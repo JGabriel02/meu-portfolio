@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8080",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,6 +11,7 @@
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.9.2",
+    "js-dos": "^8.3.20",
     "motion": "^12.9.2",
     "next": "15.3.1",
     "react": "^19.0.0",
