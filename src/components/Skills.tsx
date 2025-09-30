@@ -84,6 +84,10 @@ export default function SkillsSection() {
           >
             Fechar Doom
           </button>
+
+          <p className="mt-2 text-gray-400 text-sm">
+            Clique na tela do jogo para jogar. Use as setas para mover, espaço para atirar e o mouse para mirar.
+          </p>
         </motion.div>
       )}
 
