@@ -1,19 +1,40 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaGitAlt } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaGitAlt, FaMobile } from 'react-icons/fa';
 import { SiNextdotjs, SiPython, SiVite, SiTailwindcss, SiJavascript } from 'react-icons/si';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function SkillsSection() {
   const [showDoom, setShowDoom] = useState(false);
+  const [showMobileWarning, setShowMobileWarning] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const handleJavascriptClick = () => {
-    setShowDoom(true);
+    if (isMobile) {
+      setShowMobileWarning(true);
+    } else {
+      setShowDoom(true);
+    }
   };
 
   const closeDoom = () => {
     setShowDoom(false);
+  };
+
+  const closeMobileWarning = () => {
+    setShowMobileWarning(false);
   };
 
   const skills = [
@@ -39,7 +60,6 @@ export default function SkillsSection() {
       id="skills"
       className="min-h-screen flex flex-col justify-center items-center text-center gap-8 px-6 pt-10 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative"
     >
-      {/* Modal do Doom */}
       {showDoom && (
         <motion.div
           className="fixed inset-0 bg-black bg-opacity-95 z-50 flex flex-col items-center justify-center p-4"
@@ -48,21 +68,16 @@ export default function SkillsSection() {
           transition={{ duration: 0.5 }}
         >
           <div className="w-full max-w-4xl bg-black rounded-lg overflow-hidden border-2 border-yellow-400 shadow-2xl">
-            <div className="bg-gray-800 p-4 border-b border-yellow-400">
-              <h3 className="text-yellow-400 text-xl font-bold">🚀 DOOM - JavaScript Edition</h3>
-            </div>
-            
             <div className="w-full h-96 sm:h-[500px] bg-gray-900 flex items-center justify-center">
               <iframe
                 src="https://admiring-davinci-152c0f.netlify.app"
-                      title="DOOM"
-                      className="size-full"
-                      allow="fullscreen"
+                title="DOOM"
+                className="size-full"
+                allow="fullscreen"
               />
             </div>
           </div>
           
-          {/* Botão de fechar */}
           <button
             onClick={closeDoom}
             className="mt-6 px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition-colors duration-300 text-lg"
@@ -72,7 +87,42 @@ export default function SkillsSection() {
         </motion.div>
       )}
 
-      {/* Título */}
+      {showMobileWarning && (
+        <motion.div
+          className="fixed inset-0 bg-black bg-opacity-95 z-50 flex flex-col items-center justify-center p-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="w-full max-w-md bg-gray-800 rounded-lg overflow-hidden border-2 border-blue-400 shadow-2xl">
+            <div className="bg-gray-700 p-4 border-b border-blue-400">
+              <div className="flex items-center justify-center gap-2">
+                <FaMobile className="text-blue-400" />
+                <h3 className="text-blue-400 text-xl font-bold">Dispositivo Mobile Detectado</h3>
+              </div>
+            </div>
+            
+            <div className="p-6">
+              <div className="text-center mb-6">
+                <p className="text-gray-300 mb-4">
+                  O Doom não é otimizado para dispositivos móveis. 
+                  Para a melhor experiência, acesse de um computador.
+                </p>
+                
+                
+              </div>
+            </div>
+          </div>
+          
+          <button
+            onClick={closeMobileWarning}
+            className="mt-6 px-8 py-3 bg-gray-600 hover:bg-gray-700 text-white font-bold rounded-lg transition-colors duration-300 text-lg"
+          >
+            Entendido
+          </button>
+        </motion.div>
+      )}
+
       <motion.h2
         className="text-4xl sm:text-5xl font-bold text-blue-400"
         initial={{ opacity: 0, y: -50 }}
@@ -83,7 +133,6 @@ export default function SkillsSection() {
         Minhas Skills
       </motion.h2>
 
-      {/* Ícones das Skills */}
       <motion.div
         className="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-8"
         initial="hidden"
@@ -124,14 +173,13 @@ export default function SkillsSection() {
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
               >
-                🎮 Clique para jogar!
+                {isMobile ? '📱 Ver aviso' : '🎮 Clique para jogar!'}
               </motion.span>
             )}
           </motion.div>
         ))}
       </motion.div>
 
-      {/* Easter Egg hint */}
       <motion.div
         className="text-gray-400 text-sm mt-8 text-center"
         initial={{ opacity: 0 }}
@@ -139,8 +187,6 @@ export default function SkillsSection() {
         transition={{ delay: 1.5 }}
       >
         <p className="mb-2">💡 Dica: Tente clicar em alguma skill...</p>
-        <div className="flex justify-center items-center gap-2 text-yellow-400 animate-pulse">
-        </div>
       </motion.div>
     </section>
   );
