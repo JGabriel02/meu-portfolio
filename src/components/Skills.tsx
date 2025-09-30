@@ -86,11 +86,11 @@ export default function SkillsSection() {
           </button>
 
           <p className="mt-2 text-gray-400 text-sm">
-            Clique na tela do jogo para jogar. Use as setas para mover, espaço para atirar e o mouse para mirar.
+            Clique na tela do jogo para jogar. Use AWSD para mover, espaço para atirar e o mouse para mirar.
           </p>
         </motion.div>
       )}
-
+  
       {showMobileWarning && (
         <motion.div
           className="fixed inset-0 bg-black bg-opacity-95 z-50 flex flex-col items-center justify-center p-4"
