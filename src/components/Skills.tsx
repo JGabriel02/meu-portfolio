@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { FaReact, FaNodeJs, FaGitAlt, FaMobile } from 'react-icons/fa';
-import { SiNextdotjs, SiPython, SiVite, SiTailwindcss, SiJavascript } from 'react-icons/si';
+import { SiNextdotjs, SiPython, SiTailwindcss, SiJavascript, SiSharp } from 'react-icons/si';
 import { useState, useEffect } from 'react';
 
 export default function SkillsSection() {
@@ -43,7 +43,7 @@ export default function SkillsSection() {
     { id: 3, name: 'Next.js', icon: <SiNextdotjs size={50} className="text-gray-300" />, hoverColor: 'group-hover:text-white' },
     { id: 4, name: 'Python', icon: <SiPython size={50} className="text-yellow-400" />, hoverColor: 'group-hover:text-yellow-500' },
     { id: 5, name: 'Node.js', icon: <FaNodeJs size={50} className="text-green-500" />, hoverColor: 'group-hover:text-green-600' },
-    { id: 6, name: 'Vite', icon: <SiVite size={50} className="text-purple-400" />, hoverColor: 'group-hover:text-purple-500' },
+    { id: 6, name: 'C#', icon: <SiSharp size={50} className="text-purple-400" />, hoverColor: 'group-hover:text-purple-500' },
     { id: 7, name: 'Tailwind CSS', icon: <SiTailwindcss size={50} className="text-blue-500" />, hoverColor: 'group-hover:text-blue-600' },
     { id: 8, name: 'Git', icon: <FaGitAlt size={50} className="text-orange-500" />, hoverColor: 'group-hover:text-orange-600' },
     { 

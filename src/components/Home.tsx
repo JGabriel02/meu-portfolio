@@ -10,7 +10,7 @@ export default function HomeSection() {
 
   useEffect(() => {
     const typed = new Typed(typedElement.current!, {
-      strings: ["Desenvolvedor Frontend Web e Mobile"],
+      strings: ["Software developer"],
       typeSpeed: 50,
       backSpeed: 30,
       
@@ -74,7 +74,7 @@ export default function HomeSection() {
         transition={{ duration: 0.8, delay: 0.9 }}
       >
         <a
-          href="/curriculo.pdf"
+          href="/João Gabriel da Rocha da Silva - Resume.pdf"
           target="_blank"
           className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-80 hover:shadow-lg hover:scale-105 transition-transform animate-pulse-custom"
         >
